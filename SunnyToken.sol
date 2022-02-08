@@ -12,7 +12,7 @@ contract SunnyToken is ERC20{
     }
 
   
-    function transferAndCall(address _recipient, uint256 _value, bytes _extraData) {
+    function transferAndCall(address _recipient, uint256 _value, bytes _extraData) public {
         transfer(_recipient, _value);
         require(tokenFallback(msg.sender, _value, _extraData));
 }
