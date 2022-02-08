@@ -7,7 +7,7 @@ import "https://github.com/SunnyNavani/Contracts/blob/main/SunnyToken.sol";
 
 contract TokenService {
 
-   function tokenFallback(address _sender, uint256 _value, bytes _extraData) returns (bool) {
+   function tokenFallback(address _sender, uint256 _value, bytes _extraData) public returns (bool) {
     require(_sender == SunnyToken);
     require(_value == 1);
     uint256 payloadSize;
