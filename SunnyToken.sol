@@ -3,7 +3,6 @@
 pragma solidity 0.8.1;
 
 import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol";
-import "https://github.com/SunnyNavani/Contracts/blob/main/TokenService.sol";
 
 contract SunnyToken is ERC20{
 
